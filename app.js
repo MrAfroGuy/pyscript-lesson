@@ -7,6 +7,8 @@ const getRandomRangeButton = document.getElementById("getRandomRangeButton");
 const timeOutput = document.getElementById("timeOutput");
 const randomOutput = document.getElementById("randomOutput");
 const randomRangeOutput = document.getElementById("randomRangeOutput");
+const lowerBound = document.getElementById("lowerBound");
+const upperBound = document.getElementById("upperBound");
 // link python functions to the buttons
 getDateButton.addEventListener("click", () => {
     timeOutput.innerText = app.getCurrentDateAndTime();
@@ -15,5 +17,5 @@ getRandomButton.addEventListener("click", () => {
     randomOutput.innerText = app.getRandomButton();
 });
 getRandomRangeButton.addEventListener("click", () => {
-    randomRangeOutput.innerText = app.getRandomRangeButton
+    randomRangeOutput.innerText = app.getRandomRangeButton(lowerBound.value, upperBound.value);
 })

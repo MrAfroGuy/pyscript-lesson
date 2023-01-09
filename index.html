@@ -21,11 +21,8 @@
             def getRandomButton(self):
                 randint1 = random.randint(1,100)
                 return randint1
-            def getRandomRangeButton(self):
-                lowerBound = numberInput
-                upperBound = numberInput
-                randint2 = random.randint(lowerBound, upperBound)
-                
+            def getRandomRangeButton(self,lowerBound , upperBound):
+                return random.randint(int(lowerBound), int(upperBound))
                 
 
                 
