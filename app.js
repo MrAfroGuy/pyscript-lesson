@@ -18,4 +18,6 @@ getRandomButton.addEventListener("click", () => {
 });
 getRandomRangeButton.addEventListener("click", () => {
     randomRangeOutput.innerText = app.getRandomRangeButton(lowerBound.value, upperBound.value);
+
 })
+//added comment
